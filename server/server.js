@@ -32,8 +32,8 @@ const authRoutes = require("./routes/authRoutes");
 app.use("/api/user", authRoutes);
 
 
-app.get('/test', (req, res) => {
-    res.send('Hello World!')
+app.get('/', (req, res) => {
+  res.send('Server is Running');
 })
 
 app.listen(port, () => {
